@@ -1,14 +1,11 @@
 <?php
 /**
-*templatye footer.php
+* Template footer.php
 */
 ?>
-
 <footer>
-<h3>pied de page</h3>
+<h3>Pied de page</h3>
 </footer>
-<?php
-wp_footer();?>
-
+<?php wp_footer(); ?>
 </body>
 </html>
