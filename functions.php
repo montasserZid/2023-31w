@@ -23,10 +23,10 @@ add_theme_support('html5', array(
        'height' => 150,
        'width'  => 150,
    ) );
-
-//    function enregistrer_menus() {
-//        register_nav_menus( array(
-//            'menu_principal' => 'Menu principal',
-//            'menu_secondaire' => 'Menu secondaire',
-//        ) );
-//    }
+// ----------------enregistrement des menus-------------
+   function enregistrer_menus() {
+       register_nav_menus( array(
+           'menu_principal' => 'Menu principal',
+           'menu_secondaire' => 'Menu secondaire',
+       ) );
+   }
