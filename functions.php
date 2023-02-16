@@ -16,6 +16,13 @@ add_theme_support( 'html5',
                             'gallery', 
                             'caption' 
                     ) );
+add_theme_support( 
+    'html5',
+        array( 
+            'search-form',
+            'gallery',
+            'caption' 
+            ));
 
 add_theme_support( 'title-tag' );
 
