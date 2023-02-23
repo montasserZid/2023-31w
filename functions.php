@@ -41,11 +41,13 @@ add_theme_support( 'custom-logo',
  * @param WP_query  $query la requête principal de WP
  */
 function cidweb_modifie_requete_principal( $query ) {
-    if ( $query->is_home() && $query->is_main_query() && ! is_admin() ) {
-      $query->set( 'category_name', 'note4w4' );
-      $query->set( 'orderby', 'title' );
-      $query->set( 'order', 'ASC' );
+    if ( $query->is_home()  //si pafe d'accueil
+    && $query->is_main_query() //si requête principale
+    && ! is_admin() ) {     //si pas dans l'admin
+      $query->set( 'category_name', 'note-wordpress' ); // on filtre par catégorie << note-wp >>
+      $query->set( 'orderby', 'title' );        // on trie par titre
+      $query->set( 'order', 'ASC' );           // dans l'ordre croissant
       }
      }
-     add_action( 'pre_get_posts', 'cidweb_modifie_requete_principal' );
+     add_action( 'pre_get_posts', 'cidweb_modifie_requete_principal' ); 
                    
