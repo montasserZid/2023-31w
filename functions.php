@@ -40,6 +40,8 @@ add_theme_support( 'custom-logo',
  * Dans ce cas çi nous filtrons la requête de la page d'accueil
  * @param WP_query  $query la requête principal de WP
  */
+
+
 function cidweb_modifie_requete_principal( $query ) {
     if ( $query->is_home()  //si pafe d'accueil
     && $query->is_main_query() //si requête principale
@@ -49,5 +51,6 @@ function cidweb_modifie_requete_principal( $query ) {
       $query->set( 'order', 'ASC' );           // dans l'ordre croissant
       }
      }
-     add_action( 'pre_get_posts', 'cidweb_modifie_requete_principal' ); 
+
+     add_action( 'pre_get_posts', 'cidweb_modifie_requete_principal' );  
                    
