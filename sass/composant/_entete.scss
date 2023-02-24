@@ -1,6 +1,7 @@
 
 .site__entete {
-
+box-sizing: border-box;
+padding: 10px;
 }
 
 .logomenu{
@@ -21,8 +22,11 @@ border-radius: 10px;
     display : flex;
     justify-content: flex-end;
     flex-wrap: wrap;
-    list-style-type: none;
+    list-style: none;
+    text-decoration: none;
     margin-left : auto;
+
+
 
 .menu-item { // li
         flex : 1 0 50px;
@@ -32,12 +36,17 @@ border-radius: 10px;
         color : #555;
     }
     a:hover {
-        color : #0f0;
+        color : tomato;
     }
 
 }
 
 }
-
+@media screen (max-width:800px) {
+    .menu{
+        flex-direction : column wrap;
+        text-decoration: none;
+    }
+}
 
 }
