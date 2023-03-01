@@ -1,7 +1,7 @@
-# Exercice #1
+# TP1
 ## ameliorer la structure generale de theme
 ### Auteur: Montasser Zid
-#### Objectifs
+#### Objectifs du TP1 :
 L'objectif du TP1 :
 
     -Créer une extension
