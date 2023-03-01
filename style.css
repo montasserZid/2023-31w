@@ -36,6 +36,7 @@ html {
 body {
   margin: 0;
   padding: 10px;
+  background-color: wheat;
 }
 
 /**
@@ -409,8 +410,13 @@ p {
   flex: 1 0 50px;
 }
 .menu-entete-container .menu .menu-item a {
-  padding: 3px 5px;
+  
+  font-size: 22px;
   color: #555;
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
 .menu-entete-container .menu .menu-item a:hover {
   color: tomato;
@@ -427,7 +433,11 @@ p {
   flex: 1 0 300px;
   background-color: aliceblue;
 }
-
+.blocflex article:hover {
+  background-color: rgb(208, 174, 112);
+  transform: translate(0, -5px);
+ box-shadow: 0 0 10px #555;
+}
 .recherche article {
   background-color: wheat;
   border-radius: 10px;

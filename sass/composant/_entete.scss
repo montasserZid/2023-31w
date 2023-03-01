@@ -5,9 +5,13 @@ padding: 10px;
 }
 
 .logomenu{
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
+    // background-color: #011d2e;
+    box-sizing: border-box;
+    gap: 10px;
+    padding: 0px 20px;
 
 }
 
