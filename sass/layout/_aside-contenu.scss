@@ -15,6 +15,11 @@
     background-color: antiquewhite;
   }
 
+  .site__aside{
+    grid-area : aside;
+    background-color: rgb(191, 220, 238);
+  }
+
   /* body ou  ou un con globale */
   .site {
     display: grid;
@@ -25,4 +30,14 @@
       "main"
       "footer";
     row-gap: 50px;
-}
+    @media screen and (min-width: 1000px) {
+      grid-template-columns: 30% auto;
+      color: black;
+      
+      grid-template-areas:
+        "header header"
+        "aside main"
+        "footer footer";
+    }
+        
+    } 
