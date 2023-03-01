@@ -2,10 +2,25 @@
 ## ameliorer la structure generale de theme
 ### Auteur: Montasser Zid
 #### Objectifs
-- Formater en Scss l'affichage de fichier markdown (fait)
-- Créer des modeles pour afficher des archives d'article (fait)
-- ameliorer de module front-page.php
-- Créer un menu
-- Créer un site adaptatif en utilisant l'aapproche modile-first
-- Créer un minimum de 10 commit
-- Déployer le site local vers un serveur distant  (fait) : http//aecweb26.sg-host.com/
+L'objectif du TP1 :
+
+    -Créer une extension
+    -Continuer de faire progresser votre thème
+    -Déployer votre projet sur le serveur Siteground
+
+Ce projet vous permettra d'améliorer globalement votre site en y intégrant les éléments suivants:
+
+    -Une extension carrousel permettant de visionner une galerie d'images
+    -Un pied de page
+    -Un design de thème amélioré avec Sass et PHP
+    Amélioration des modèles:
+        -front-page.php
+        -single.php
+        -category.php
+        -search.php
+        -header.php
+        -footer.php
+    -Une mise en page entièrement adaptative
+    Au niveau du design du site inspirez-vous des sites:
+        https://www.scrum.org/
+        https://cfe.dev/
