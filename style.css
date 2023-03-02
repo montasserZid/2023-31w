@@ -434,12 +434,20 @@ p {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.blocflex article {
+.blocflex .blocflex__article {
   margin: 10px;
   padding: 5px;
   border: 1px solid #aaa;
   flex: 1 0 300px;
   background-color: aliceblue;
+  text-align: center;
+}
+.blocflex .blocflex__galerie {
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid #aaa;
+  flex: 1 0 100%;
+  background-color: antiquewhite;
   text-align: center;
 }
 
