@@ -3,13 +3,29 @@
     justify-content: space-between;
     flex-wrap: wrap;
     .blocflex__article {
-        margin : 10px;
-        padding : 5px;
-        border : 1px solid #aaa;
+        margin: 10px;
+        padding: 5px;
+        border: 1px solid #aaa;
         flex: 1 0 300px;
-       background-color: aliceblue;
-       text-align: center;
-    }
+        background-color: aliceblue;
+        text-align: center;
+      }
+      
+      .blocflex__article:hover {
+        cursor: pointer;
+        background-color: rgb(144, 193, 237);
+        animation: zoom-in 0.3s forwards;
+      }
+      
+      @keyframes zoom-in {
+        from {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(1.1);
+        }
+      }
+      
     .blocflex__galerie{
         margin : 10px;
         padding : 5px;
