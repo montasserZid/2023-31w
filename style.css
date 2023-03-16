@@ -399,6 +399,19 @@ p {
   padding: 0px 20px;
 }
 
+.menusearch {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column-reverse;
+}
+@media screen and (min-width: 1000px) {
+  .menusearch {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
 .menu-entete-container {
   flex: 1;
   background-color: wheat;
@@ -406,11 +419,17 @@ p {
 }
 .menu-entete-container .menu {
   display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-  list-style: none;
-  text-decoration: none;
-  margin-left: auto;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  list-style-type: none;
+}
+@media screen and (min-width: 400px) {
+  .menu-entete-container .menu {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
 }
 .menu-entete-container .menu .menu-item {
   flex: 1 0 50px;
@@ -427,6 +446,11 @@ p {
     flex-direction: column wrap;
     text-decoration: none;
   }
+}
+
+.recherche {
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .blocflex {
@@ -464,69 +488,57 @@ p {
   text-align: center;
 }
 
-.recherche article {
+.main__recherche article {
   background-color: wheat;
   border-radius: 10px;
 }
 
+.menu-cours-container {
+  font-family: sans-serif;
+  background-color: #bfdcee;
+}
 .menu-cours-container .menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (min-width: 1000px) {
   .menu-cours-container .menu {
     flex-direction: column;
   }
 }
-.menu-cours-container .menu-item {
-  list-style-type: none;
+.menu-cours-container .menu .menu-item {
+  margin: 5px;
+  border-radius: 5px;
+  background-color: rgb(130, 199, 242);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease-in-out;
 }
-.menu-cours-container .menu-item a {
-  color: #fff;
-  font-size: 1.5rem;
-  font-weight: 600;
+.menu-cours-container .menu .menu-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+.menu-cours-container .menu .menu-item a {
   text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 10px;
-  transition: all 0.3s ease-in-out;
+  color: #333333;
+  display: block ruby;
+  padding: 10px;
 }
-.menu-cours-container .menu-item a:hover {
-  color: #011d2e;
+.menu-cours-container .menu .menu-item a .cours__sigle {
+  font-weight: bold;
+  margin-right: 5px;
 }
-.menu-cours-container .menu-item a .cours__sigle {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 10px;
-  transition: all 0.3s ease-in-out;
-}
-.menu-cours-container .menu-item a .cours__sigle:hover {
-  color: #011d2e;
-}
-.menu-cours-container .menu-item a .cours__titre {
+.menu-cours-container .menu .menu-item a .cours__titre {
   display: none;
 }
 @media screen and (min-width: 1000px) {
-  .menu-cours-container .menu-item a .cours__titre {
+  .menu-cours-container .menu .menu-item a .cours__titre {
     display: block;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 10px;
-    transition: all 0.3s ease-in-out;
   }
-  .menu-cours-container .menu-item a .cours__titre:hover {
-    color: #011d2e;
-  }
-}
-.menu-cours-container .menu-item a .cours__titre:hover {
-  background-color: #fff;
-  color: #011d2e;
 }
 
 /* -------------------------- LAYOUt */
