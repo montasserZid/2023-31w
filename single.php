@@ -9,6 +9,8 @@ get_header() ?>
 if (have_posts()):
    while(have_posts()): the_post();
         the_title('<h1>','</h1>');
+        ?> <p style="color:red;font-family: 'Montserrat', sans-serif;font-size:1.2rem"><?php the_field('enseignant'); ?> <br> <?php the_field('domaine');
+        ?> </p> <?php
         the_content();  
     endwhile;    
 endif;
