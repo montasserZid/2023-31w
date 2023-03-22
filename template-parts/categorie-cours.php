@@ -13,5 +13,6 @@ $duree = "90h";
     <h2><a href="<?php the_permalink(); ?>"> <?= get_the_title(); ?></a></h2>
     <h3><?= $titre_long ?></h3>
     <p><?= wp_trim_words(get_the_excerpt(), 15) ?></p>
+    <p><?php the_field('enseignant'); ?> </p>
     <p><?= $duree ?></p>
 </article>
