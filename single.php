@@ -11,7 +11,8 @@ if (have_posts()):
         the_title('<h1>','</h1>');
         ?> <p style="color:red;font-family: 'Montserrat', sans-serif;font-size:1.2rem"><?php the_field('enseignant'); ?> <br> <?php the_field('domaine');
         ?> </p> <?php
-        the_content();  
+        the_content(); 
+        //get template part pour tester getcategory template pour cibler
     endwhile;    
 endif;
 ?>   

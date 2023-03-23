@@ -397,6 +397,10 @@ p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
+.invisible {
+  display: none;
+}
+
 /* -------------------------- COMPOSANT */
 .logomenu {
   display: flex;
@@ -576,7 +580,7 @@ Mise en page avec display: grid
 .site__entete {
   grid-area: header;
   padding: 1rem clamp(1rem, 3vw, 20rem);
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .site__main {
@@ -623,7 +627,6 @@ Mise en page avec display: grid
   display: grid;
   grid-template-columns: auto;
   grid-template-areas: "header" "aside" "main" "footer";
-  row-gap: 50px;
 }
 @media screen and (min-width: 1000px) {
   .site {
@@ -634,7 +637,6 @@ Mise en page avec display: grid
 
 .no-aside {
   grid-template-areas: "header" "main" "footer";
-  row-gap: 50px;
 }
 @media screen and (min-width: 1000px) {
   .no-aside {
