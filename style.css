@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-Theme Name: 31w Montasser zid
+Theme Name: 31w-Montasser-zid'
 Theme URI: https://github.com/MontasserZid
 Author: Eddy Martin
 Author URI: https://eddytuto.ca
@@ -557,8 +557,9 @@ p {
 .menu-cours-container .menu .menu-item a {
   text-decoration: none;
   color: #333333;
-  display: block ruby;
+  display: flex;
   padding: 10px;
+  align-items: center;
 }
 .menu-cours-container .menu .menu-item a .cours__sigle {
   font-weight: bold;
@@ -571,6 +572,27 @@ p {
   .menu-cours-container .menu .menu-item a .cours__titre {
     display: block;
   }
+}
+
+.site_footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_widget {
+  display: flex;
+  flex-direction: row;
+}
+.footer_widget div {
+  flex: 1 0 33%;
+}
+
+.footer_lien {
+  display: flex;
+  flex-direction: row;
+}
+.footer_lien div {
+  flex: 1 0 33%;
 }
 
 /* -------------------------- LAYOUt */
