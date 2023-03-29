@@ -16,3 +16,4 @@ $duree = "90h";
     <p><?php the_field('enseignant'); ?> </p>
     <p><?= $duree ?></p>
 </article>
+<!-- i7eb des modification houni  -->

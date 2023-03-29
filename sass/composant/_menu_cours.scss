@@ -104,10 +104,11 @@
         }
               
         a {
-            text-decoration: none;
-            color: #333333;
-            display: block ruby;
-            padding: 10px;
+          text-decoration: none;
+          color: #333333;
+          display: flex;
+          padding: 10px;
+          align-items: center;
             .cours__sigle {
               font-weight: bold;
               margin-right: 5px;
