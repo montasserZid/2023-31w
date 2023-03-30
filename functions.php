@@ -69,6 +69,7 @@ add_theme_support( 'custom-background',
                         'default-image' => '',
                     ) );
 
+add_theme_support( 'post-thumbnails' );
 function perso_menu_item_title($title, $item, $args) {
     // Remplacer 'nom_de_votre_menu' par l'identifiant de votre menu  
   
@@ -93,7 +94,7 @@ add_filter('nav_menu_item_title', 'perso_menu_item_title', 10, 3);
 function enregistrer_sidebar() {
     register_sidebar( array(
         'name' => __( 'Pied de page 1', '31w-Montasser-zid' ),
-        'id' => 'Pied-page-1',
+        'id' => 'pied-page-1',
         'description' => __( 'Une zone widget pour afficher des widgets dans le pied de page.', '31w-Montasser-zid' ),
         'before_widget' => '<div id="%1$s" class="widget %2$s">',
         'after_widget' => '</div>',
@@ -103,7 +104,7 @@ function enregistrer_sidebar() {
 
     register_sidebar( array(
         'name' => __( 'Pied de page 2', '31w-Montasser-zid' ),
-        'id' => 'Pied-page-2',
+        'id' => 'pied-page-2',
         'description' => __( 'Une zone widget pour afficher des widgets dans le pied de page.', '31w-Montasser-zid' ),
         'before_widget' => '<div id="%1$s" class="widget %2$s">',
         'after_widget' => '</div>',
@@ -113,7 +114,7 @@ function enregistrer_sidebar() {
 
     register_sidebar( array(
         'name' => __( 'Pied de page 3', '31w-Montasser-zid' ),
-        'id' => 'Pied-page-3',
+        'id' => 'pied-page-3',
         'description' => __( 'Une zone widget pour afficher des widgets dans le pied de page.', '31w-Montasser-zid' ),
         'before_widget' => '<div id="%1$s" class="widget %2$s">',
         'after_widget' => '</div>',
