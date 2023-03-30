@@ -1,24 +1,28 @@
-.menu__bloc{ //nav
+$menu-bg-color: #f5f5f5;
+$menu-border-color: #aaa;
+$menu-link-color: #333;
 
-    .menu{ //ul
-        display: flex;
-        flex-wrap: wrap;
-        list-style-type: none;
+.menu__bloc { //nav
+  .menu { //ul
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
 
+    .menu.item { //li
+      border: 1px solid $menu-border-color;
+      flex: 1 0 33%;
+      transition: all 0.3s ease-in-out;
 
-        .menu.item {//li
-            border : 1px solid #aaa;
-            flex: 1 0 33%;
+      &:hover {
+        background-color: darken($menu-bg-color, 5%);
+        transform: scale(1.05);
+      }
 
-            a{
-              font-size : 2rem;
-              text-decoration : none;
-
-            }
-
-        }
-
-
+      a {
+        font-size: 2rem;
+        text-decoration: none;
+        color: $menu-link-color;
+      }
     }
-
+  }
 }
