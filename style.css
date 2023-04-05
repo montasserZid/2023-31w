@@ -574,6 +574,10 @@ p {
   }
 }
 
+.evenement__porte {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=bell");
+}
+
 .menu__bloc .menu {
   display: flex;
   flex-wrap: wrap;
