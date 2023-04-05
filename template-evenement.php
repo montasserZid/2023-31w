@@ -20,8 +20,9 @@ get_header(); ?>
 
     <div class="entry-content">
       <?php the_content(); ?>
-      <p><strong>L'adresse de l'événement :</strong> <?php the_field('adresse'); ?></p>
+      <p><strong>L'adresse de l'événement :</strong> <?php the_field('adresse_evt'); ?></p>
       <p><strong>Date et heure de l'événement :</strong> <?php the_field('date_de_levenement_'); ?></p>
+      
     </div><!-- .entry-content -->
   </article><!-- #post-<?php the_ID(); ?> -->
 
