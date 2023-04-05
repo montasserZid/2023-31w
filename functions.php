@@ -88,7 +88,7 @@ function perso_menu_item_title($title, $item, $args) {
     return  $title ;
 }
 add_filter('nav_menu_item_title', 'perso_menu_item_title', 10, 3);
-/////////////////////////////////////////// enregistrement d'un sidebar
+/////////////////////////////////////////// enregistrement d'un sidebar/
 
 // Enregistrer le sidebar
 function enregistrer_sidebar() {
