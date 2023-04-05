@@ -596,6 +596,25 @@ p {
 
 .evenement__porte {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=bell");
+  background-repeat: no-repeat;
+  background-color: #f5f5f5;
+  height: 100px;
+  margin: 0 auto;
+  transition: all 0.3s ease-in-out;
+}
+.evenement__porte:hover {
+  background-color: #e8e8e8;
+  transform: scale(1.05);
+}
+.evenement__porte a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.3rem;
+  text-align: center;
+  line-height: 64px;
 }
 
 .viewport {
