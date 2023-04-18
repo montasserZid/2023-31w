@@ -649,6 +649,13 @@ p {
   flex: 1 0 33%;
 }
 
+.erreur-componant {
+  display: flex;
+  flex-direction: column;
+  margin: auto auto;
+  align-items: center;
+}
+
 /* -------------------------- LAYOUt */
 /**
 Mise en page avec display: grid
