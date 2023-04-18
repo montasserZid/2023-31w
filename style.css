@@ -649,11 +649,21 @@ p {
   flex: 1 0 33%;
 }
 
+.error-404 h1 {
+  font-size: 100px;
+}
+
 .erreur-componant {
   display: flex;
   flex-direction: column;
   margin: auto auto;
   align-items: center;
+  gap: 20px;
+}
+.erreur-componant .h2 {
+  font-size: clamp(0.625rem, -0.3125rem + 3vw, 2.5rem);
+  color: red;
+  text-align: center;
 }
 
 .menu-cours-container {

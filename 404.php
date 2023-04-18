@@ -10,7 +10,10 @@ get_header();
         <h1>Erreur 404</h1>
         <h2>Page introuvable , vouz pouvez tenter une recherche</h2>
         <div class="erreur-componant">
-        <?= get_search_form(); 
+        <?= get_search_form();
+ ?>
+    <h2>Nos choix de Cours</h2>
+ <?php
             if(in_category('cours'))
             if (isset($category))
             {
