@@ -9,6 +9,7 @@ get_header();
         <img src="<?php echo esc_url(get_template_directory_uri() . '/images/404-error.png'); ?>" alt="Erreur 404">
         <h1>Erreur 404</h1>
         <h2>Page introuvable , vouz pouvez tenter une recherche</h2>
+        <?= get_search_form(); ?>
     </div>
 </main>
 <?php get_footer(); ?>
