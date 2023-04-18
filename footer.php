@@ -20,7 +20,7 @@
   </section>
  
   <ul>
-    <li><a href="https://github.com/montasserZid/2023-31w/tree/tp1">TP1 sur GitHub</a></li>
+    <li><a href="https://github.com/montasserZid/2023-31w/tree/exam-final">Exam Final sur GitHub</a></li>
     <li><a href="https://github.com/montasserZid/carrousel-31w">Caroussel sur GitHub</a></li>
   </ul>
 </footer>

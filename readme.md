@@ -1,7 +1,7 @@
 # Exam final
 ## ameliorer la structure generale de theme
 ### Auteur: Montasser Zid
-<!-- #### Objectifs du TP2 : -->
+#### lien site-ground : http://aecweb26.sg-host.com/category/note-wordpress/e
 # exam fnal (?? points)
 
 ## L\'objectif du l'Exam final :

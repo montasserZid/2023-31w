@@ -25,6 +25,15 @@ get_header();
 
             ))
         ?>
+     <h2>Nos notes de cours</h2>
+<?php
+    wp_nav_menu(array(
+            "menu" => "note-wp",
+            "container" => "nav",
+            "container_class" => "menu__erreur"
+    ));
+    ?>
+
         </div>
     </div>
 </main>

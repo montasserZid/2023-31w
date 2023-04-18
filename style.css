@@ -578,6 +578,38 @@ p {
   }
 }
 
+.menu__erreur .menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 20px;
+}
+.menu__erreur .menu .menu-item {
+  list-style-type: none;
+}
+.menu__erreur .menu .menu-item a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-variant: small-caps;
+}
+.menu__erreur .menu .menu-item a .cours__sigle {
+  padding: 1px 3px;
+}
+@media screen and (min-width: 1000px) {
+  .menu__erreur .menu .menu-item a .cours__sigle {
+    padding: 5px;
+  }
+}
+.menu__erreur .menu .menu-item a .cours__titre {
+  display: none;
+}
+@media screen and (min-width: 1000px) {
+  .menu__erreur .menu .menu-item a .cours__titre {
+    display: block;
+  }
+}
+
 .menu__bloc .menu {
   display: flex;
   flex-wrap: wrap;

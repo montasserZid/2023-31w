@@ -125,3 +125,41 @@
   
   }
 
+  .menu__erreur { // nav
+
+    .menu{ // ul
+    display : flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 20px;
+
+    @media screen and (min-width : 1000px) {
+        //flex-direction: column;
+    }
+
+    .menu-item{ // li
+            list-style-type: none;
+
+        a{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            font-variant: small-caps;
+            .cours__sigle{
+                padding : 1px 3px;
+
+                @media screen and (min-width: 1000px) {
+                    padding: 5px;              
+                }
+            }
+            .cours__titre{
+                display : none;
+                @media screen and (min-width : 1000px) {
+                    display : block;
+                }
+            }
+        }
+    }
+}
+  }
+
