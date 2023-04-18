@@ -10,7 +10,18 @@ get_header();
         <h1>Erreur 404</h1>
         <h2>Page introuvable , vouz pouvez tenter une recherche</h2>
         <div class="erreur-componant">
-        <?= get_search_form(); ?>
+        <?= get_search_form(); 
+            if(in_category('cours'))
+            if (isset($category))
+            {
+            $lemenu = "cours";
+            }
+            wp_nav_menu(array(
+
+            "container" => "nav"
+
+            ))
+        ?>
         </div>
     </div>
 </main>
