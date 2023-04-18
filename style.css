@@ -653,6 +653,21 @@ p {
   line-height: 64px;
 }
 
+.menu__erreur {
+  margin: 5px;
+  border-radius: 5px;
+  background-color: rgb(130, 199, 242);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease-in-out;
+}
+.menu__erreur .li {
+  list-style: none;
+}
+.menu__erreur .li :hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
 .viewport {
   min-height: 100vh;
   padding: 0 1.2rem;
