@@ -656,6 +656,55 @@ p {
   align-items: center;
 }
 
+.menu-cours-container {
+  font-family: sans-serif;
+  background-color: #bfdcee;
+}
+.menu-cours-container .menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media screen and (min-width: 1000px) {
+  .menu-cours-container .menu {
+    flex-direction: column;
+  }
+}
+.menu-cours-container .menu .menu-item {
+  margin: 5px;
+  border-radius: 5px;
+  background-color: rgb(130, 199, 242);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease-in-out;
+}
+.menu-cours-container .menu .menu-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+.menu-cours-container .menu .menu-item a {
+  text-decoration: none;
+  color: #333333;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+.menu-cours-container .menu .menu-item a .cours__sigle {
+  font-weight: bold;
+  margin-right: 5px;
+}
+.menu-cours-container .menu .menu-item a .cours__titre {
+  display: none;
+}
+@media screen and (min-width: 1000px) {
+  .menu-cours-container .menu .menu-item a .cours__titre {
+    display: block;
+  }
+}
+
 /* -------------------------- LAYOUt */
 /**
 Mise en page avec display: grid
@@ -700,7 +749,51 @@ Mise en page avec display: grid
 
 .site__aside {
   grid-area: aside;
-  background-color: rgb(47, 148, 210);
+  background-color: #bfdcee;
+}
+.site__aside .menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media screen and (min-width: 1000px) {
+  .site__aside .menu {
+    flex-direction: column;
+  }
+}
+.site__aside .menu .menu-item {
+  margin: 5px;
+  border-radius: 5px;
+  background-color: rgb(130, 199, 242);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease-in-out;
+}
+.site__aside .menu .menu-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+.site__aside .menu .menu-item a {
+  text-decoration: none;
+  color: #333333;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+.site__aside .menu .menu-item a .cours__sigle {
+  font-weight: bold;
+  margin-right: 5px;
+}
+.site__aside .menu .menu-item a .cours__titre {
+  display: none;
+}
+@media screen and (min-width: 1000px) {
+  .site__aside .menu .menu-item a .cours__titre {
+    display: block;
+  }
 }
 
 /* body ou un conteneur globale */

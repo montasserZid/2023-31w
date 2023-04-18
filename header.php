@@ -36,3 +36,8 @@
        get_template_part("template-parts/aside");
     }
      ?>
+        <?php 
+    if (is_front_page() == false && !is_404()) {
+        get_template_part("template-parts/aside");
+    }
+    ?>
